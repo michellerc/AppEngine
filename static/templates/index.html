@@ -1,0 +1,15 @@
+<html>
+    <head>
+    </head>
+    <body>
+
+        <table>
+        {% for artist in artists %}
+            <tr>
+            <td><a href="/albums?artist_id={{ artist.key.id() }}">{{ artist.name }}</a></td>
+            </tr>
+        {% endfor %}
+        </table>
+
+    </body>
+</html>
